@@ -47,7 +47,7 @@ async function runAudit() {
     console.error('Failed Request:', request.url(), request.failure()?.errorText);
   });
 
-  const BASE_URL = process.env.BASE_URL || 'http://localhost:3000/Kamakshi/';
+  const BASE_URL = process.env.BASE_URL || 'http://localhost:3000/';
   await page.goto(BASE_URL, { waitUntil: 'networkidle' });
   await page.waitForTimeout(1000);
 
