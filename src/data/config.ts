@@ -1,3 +1,5 @@
+import { getAssetUrl } from '../utils/asset';
+
 export type CurrencyCode = 'INR' | 'USD';
 
 export interface MarketProfile {
@@ -171,7 +173,7 @@ export const siteConfig: SiteConfig = {
     brandName: "Kamakshi Traders",
     brandDescriptor: "Solar Solutions",
     fullDisplayName: "Kamakshi Traders — Solar Solutions",
-    logoPath: "/images/kamakshi-traders-logo.png",
+    logoPath: getAssetUrl("images/kamakshi-traders-logo.png"),
     legalNamePlaceholder: "[COMPANY_LEGAL_ENTITY_NAME_PLACEHOLDER — e.g. Kamakshi Traders / Kamakshi Solar Solutions Pvt. Ltd.]",
     tagline: "Powering Progress. Engineered for Clean Independence.",
     subheadline: "Turnkey rooftop and commercial solar EPC, high-efficiency photovoltaic infrastructure, and battery storage engineered for maximum lifetime ROI.",
@@ -356,7 +358,7 @@ export const siteConfig: SiteConfig = {
         { label: "Substrate Fit", value: "Standing Seam, Metal Shed, RCC Flat Slab" }
       ],
       highlightMetric: "Up to 70% Energy Tariff Hedging",
-      image: "/solar/solution-ci.svg"
+      image: getAssetUrl("solar/solution-ci.svg")
     },
     {
       id: "residential-rooftop",
@@ -378,7 +380,7 @@ export const siteConfig: SiteConfig = {
         { label: "System Warranty", value: "Comprehensive Workmanship & Performance" }
       ],
       highlightMetric: "Zero-Bill Lifestyle Architecture",
-      image: "/solar/solution-scada.svg"
+      image: getAssetUrl("solar/solution-scada.svg")
     },
     {
       id: "utility-photovoltaic",
@@ -400,7 +402,7 @@ export const siteConfig: SiteConfig = {
         { label: "Grid Interconnection", value: "CEA & State Grid Code Compliant" }
       ],
       highlightMetric: "High-Albedo Bifacial Architecture",
-      image: "/solar/solution-utility.svg"
+      image: getAssetUrl("solar/solution-utility.svg")
     }
   ],
   projects: [
@@ -416,7 +418,7 @@ export const siteConfig: SiteConfig = {
         co2Offset: "13.0 MT CO₂ / yr",
         efficiency: "21.8% Module STC"
       },
-      image: "/images/projects/project-3-jodhpur-commissioned.jpg",
+      image: getAssetUrl("images/projects/project-3-jodhpur-commissioned.jpg"),
       description: "Fully commissioned grid-tied rooftop solar system with bi-directional DISCOM net metering, heavy-duty elevated mounting structure, and smart smartphone generation telemetry in Jodhpur.",
       tags: ["Residential Rooftop", "Net Metering", "Jodhpur", "Elevated Mounting"]
     },
@@ -432,7 +434,7 @@ export const siteConfig: SiteConfig = {
         co2Offset: "10.4 MT CO₂ / yr",
         efficiency: "22.1% Module STC"
       },
-      image: "/images/projects/project-2-jodhpur-residential.jpg",
+      image: getAssetUrl("images/projects/project-2-jodhpur-residential.jpg"),
       description: "Turnkey rooftop solar installation engineered for high thermal resilience under Rajasthan's intense irradiance, featuring corrosion-resistant structural mounting and rapid grid cutover protection.",
       tags: ["On-Grid Solar", "Bifacial PV", "Rajasthan", "DISCOM Approved"]
     },
@@ -448,7 +450,7 @@ export const siteConfig: SiteConfig = {
         co2Offset: "110 MT CO₂ / yr",
         efficiency: "22.4% Module STC"
       },
-      image: "/images/projects/project-5-commercial-shed-array.png",
+      image: getAssetUrl("images/projects/project-5-commercial-shed-array.png"),
       description: "Engineered rooftop installation on curved corrugated industrial shed utilizing non-penetrating clamping fixtures, high-efficiency monocrystalline modules, and smart string inverters.",
       tags: ["Commercial Shed", "Rooftop EPC", "Zero Penetration", "Peak Shaving"]
     },
@@ -464,7 +466,7 @@ export const siteConfig: SiteConfig = {
         co2Offset: "155 MT CO₂ / yr",
         efficiency: "22.3% Module STC"
       },
-      image: "/images/projects/project-1-rooftop-structure.jpg",
+      image: getAssetUrl("images/projects/project-1-rooftop-structure.jpg"),
       description: "High-clearance hot-dip galvanized elevated mounting superstructure built above an industrial shed, optimizing rooftop space utilization while maintaining ventilation and natural cooling.",
       tags: ["Elevated Structure", "Industrial Solar", "Hot-Dip Galvanized", "High Yield"]
     },
@@ -480,7 +482,7 @@ export const siteConfig: SiteConfig = {
         co2Offset: "324 MT CO₂ / yr",
         efficiency: "22.5% Module STC"
       },
-      image: "/images/projects/project-4-industrial-fabrication.jpg",
+      image: getAssetUrl("images/projects/project-4-industrial-fabrication.jpg"),
       description: "Precision heavy steel truss engineering and fabrication supporting custom commercial and industrial solar installations, engineered to withstand high wind loads and harsh desert conditions.",
       tags: ["Structural Fabrication", "Truss Engineering", "Heavy Industrial", "EPC Turnkey"]
     }
@@ -538,7 +540,7 @@ export const siteConfig: SiteConfig = {
       readTime: "6 min read",
       date: "October 2026",
       snippet: "A practical guide for commercial and industrial energy managers evaluating captive solar, group captive models, and Time-of-Day (TOD) tariff optimization.",
-      image: "/solar/insight-grid.svg"
+      image: getAssetUrl("solar/insight-grid.svg")
     },
     {
       title: "Liquid-Cooled BESS vs Air-Cooled Storage: Total Lifecycle Economics",
@@ -546,7 +548,7 @@ export const siteConfig: SiteConfig = {
       readTime: "8 min read",
       date: "September 2026",
       snippet: "Why liquid-cooled lithium iron phosphate battery containers reduce cell degradation, lower auxiliary HVAC parasitic load, and extend system operational life beyond 15 years.",
-      image: "/solar/insight-bess.svg"
+      image: getAssetUrl("solar/insight-bess.svg")
     },
     {
       title: "Bifacial Solar Module Yield in High-Ambient Indian Climates",
@@ -554,7 +556,7 @@ export const siteConfig: SiteConfig = {
       readTime: "5 min read",
       date: "August 2026",
       snippet: "Measuring rear-side irradiance gain across white reflective membranes, crushed gravel, and standard concrete roof surfaces in industrial solar arrays.",
-      image: "/solar/insight-bifacial.svg"
+      image: getAssetUrl("solar/insight-bifacial.svg")
     }
   ],
   legalPolicies: [

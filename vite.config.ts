@@ -55,7 +55,7 @@ function apiMiddlewarePlugin(): Plugin {
 }
 
 export default defineConfig({
-  base: '/',
+  base: '/Kamakshi/',
   plugins: [react(), apiMiddlewarePlugin()],
   server: {
     port: 3000,

@@ -47,7 +47,8 @@ async function runAudit() {
     console.error('Failed Request:', request.url(), request.failure()?.errorText);
   });
 
-  await page.goto('http://localhost:3000/', { waitUntil: 'networkidle' });
+  const BASE_URL = process.env.BASE_URL || 'http://localhost:3000/Kamakshi/';
+  await page.goto(BASE_URL, { waitUntil: 'networkidle' });
   await page.waitForTimeout(1000);
 
   // Verify official Kamakshi Traders logo rendered in navigation
@@ -462,7 +463,7 @@ async function runAudit() {
   // ==========================================
   console.log('\n--- 9. Testing Mobile Viewport (375x812) ---');
   const mobilePage = await browser.newPage({ viewport: { width: 375, height: 812 } });
-  await mobilePage.goto('http://localhost:3000/', { waitUntil: 'networkidle' });
+  await mobilePage.goto(BASE_URL, { waitUntil: 'networkidle' });
   await mobilePage.waitForTimeout(1000);
 
   // Check mobile logo
@@ -509,7 +510,7 @@ async function runAudit() {
   // ==========================================
   console.log('\n--- 10. Testing Tablet Viewport (768x1024) ---');
   const tabletPage = await browser.newPage({ viewport: { width: 768, height: 1024 } });
-  await tabletPage.goto('http://localhost:3000/', { waitUntil: 'networkidle' });
+  await tabletPage.goto(BASE_URL, { waitUntil: 'networkidle' });
   await tabletPage.waitForTimeout(1000);
   await tabletPage.screenshot({ path: path.join(screenshotsDir, 'tablet-full.png'), fullPage: true });
   console.log('Captured tablet full page screenshot.');
@@ -576,7 +577,7 @@ async function runAudit() {
   // ==========================================
   console.log('\n--- 12. Testing Static Discovery Files ---');
   // robots.txt
-  const robotsRes = await page.request.get('http://localhost:3000/robots.txt');
+  const robotsRes = await page.request.get(`${BASE_URL}robots.txt`);
   const robotsText = await robotsRes.text();
   console.log('robots.txt status:', robotsRes.status(), '| bytes:', robotsText.length);
   if (robotsRes.status() !== 200 || !robotsText.includes('Googlebot') || !robotsText.includes('OAI-SearchBot') || !robotsText.includes('sitemap.xml')) {
@@ -584,7 +585,7 @@ async function runAudit() {
   }
 
   // sitemap.xml
-  const sitemapRes = await page.request.get('http://localhost:3000/sitemap.xml');
+  const sitemapRes = await page.request.get(`${BASE_URL}sitemap.xml`);
   const sitemapXml = await sitemapRes.text();
   console.log('sitemap.xml status:', sitemapRes.status(), '| bytes:', sitemapXml.length);
   if (sitemapRes.status() !== 200 || !sitemapXml.includes('<urlset') || !sitemapXml.includes('image:image') || !sitemapXml.includes('video:video')) {
@@ -592,7 +593,7 @@ async function runAudit() {
   }
 
   // llms.txt
-  const llmsRes = await page.request.get('http://localhost:3000/llms.txt');
+  const llmsRes = await page.request.get(`${BASE_URL}llms.txt`);
   const llmsText = await llmsRes.text();
   console.log('llms.txt status:', llmsRes.status(), '| bytes:', llmsText.length);
   if (llmsRes.status() !== 200 || !llmsText.includes('Kamakshi Traders') || !llmsText.includes('Jodhpur') || !llmsText.includes('70144 93079')) {

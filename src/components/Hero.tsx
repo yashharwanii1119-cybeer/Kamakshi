@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, ChevronDown } from 'lucide-react';
 import { siteConfig } from '../data/config';
 import { getWhatsAppUrl } from '../utils/whatsapp';
+import { getAssetUrl } from '../utils/asset';
 
 interface HeroProps {
   onOpenQuote?: () => void;
@@ -21,7 +22,7 @@ export const Hero: React.FC<HeroProps> = () => {
         >
           {/* High-res cinematic solar architectural installation image */}
           <img
-            src="/solar/hero-solar.svg"
+            src={getAssetUrl("solar/hero-solar.svg")}
             alt="Kamakshi Traders Rooftop and Commercial Solar Photovoltaic Installation in Jodhpur Rajasthan"
             width="1920"
             height="1080"

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { CheckCircle2, ArrowRight, Zap, MessageCircle, ShieldCheck } from 'lucide-react';
 import { siteConfig } from '../data/config';
 import { getSolutionWhatsAppUrl } from '../utils/whatsapp';
+import { getAssetUrl } from '../utils/asset';
 
 export const Solutions: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -134,14 +135,14 @@ export const Solutions: React.FC = () => {
                 loop
                 playsInline
                 preload="metadata"
-                poster="/images/video/poster.png"
+                poster={getAssetUrl("images/video/poster.png")}
                 width="1280"
                 height="720"
                 title="Kamakshi Traders Solar Installation and Field Engineering Overview"
                 aria-label="Field engineering and rooftop solar installation overview by Kamakshi Traders"
                 className="w-full h-full object-cover"
               >
-                <source src="/images/video/gemini_generated_video_73d62f32_gwr_video_mvp.mp4" type="video/mp4" />
+                <source src={getAssetUrl("images/video/gemini_generated_video_73d62f32_gwr_video_mvp.mp4")} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>

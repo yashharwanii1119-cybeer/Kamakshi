@@ -1,6 +1,7 @@
 import React from 'react';
 import { ShieldCheck, Award, Zap, Compass, CheckCircle2, ArrowRight } from 'lucide-react';
 import { siteConfig } from '../data/config';
+import { getAssetUrl } from '../utils/asset';
 
 interface AboutSectionProps {
   onOpenQuote: () => void;
@@ -41,7 +42,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenQuote }) => {
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-3xl overflow-hidden border border-brand-maroon/15 shadow-luxury">
               <img
-                src="/solar/about-engineering.svg"
+                src={getAssetUrl("solar/about-engineering.svg")}
                 alt="Kamakshi Traders Solar Engineering and Field Execution"
                 className="w-full h-96 object-cover filter brightness-[0.95]"
               />
