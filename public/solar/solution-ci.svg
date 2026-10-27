@@ -1,0 +1,47 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ciBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#191719"/>
+      <stop offset="50%" stop-color="#360B19"/>
+      <stop offset="100%" stop-color="#120207"/>
+    </linearGradient>
+    <linearGradient id="roofGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2a0813"/>
+      <stop offset="100%" stop-color="#420d1c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#ciBg)"/>
+  
+  <!-- Warehouse Roof Structure -->
+  <polygon points="150,550 1050,550 1150,750 50,750" fill="url(#roofGrad)" stroke="#70152D" stroke-width="2"/>
+  
+  <!-- Ballasted Solar Panel Modules -->
+  <g stroke="#C62845" stroke-width="1.5" fill="#150308" fill-opacity="0.8">
+    <!-- Row 1 -->
+    <polygon points="200,580 320,580 340,620 210,620"/>
+    <polygon points="350,580 470,580 490,620 360,620"/>
+    <polygon points="500,580 620,580 640,620 510,620"/>
+    <polygon points="650,580 770,580 790,620 660,620"/>
+    <polygon points="800,580 920,580 940,620 810,620"/>
+    <polygon points="950,580 1000,580 1010,620 955,620"/>
+    
+    <!-- Row 2 -->
+    <polygon points="170,640 310,640 330,690 180,690"/>
+    <polygon points="340,640 480,640 500,690 350,690"/>
+    <polygon points="510,640 650,640 670,690 520,690"/>
+    <polygon points="680,640 820,640 840,690 690,690"/>
+    <polygon points="850,640 990,640 1010,690 860,690"/>
+  </g>
+
+  <!-- Inverter Unit with Status Glow -->
+  <rect x="900" y="440" width="120" height="100" rx="10" fill="#20060e" stroke="#E44743" stroke-width="2"/>
+  <circle cx="930" cy="470" r="6" fill="#E44743"/>
+  <circle cx="960" cy="470" r="6" fill="#E9B85B"/>
+  <line x1="930" y1="510" x2="990" y2="510" stroke="#FAF8F5" stroke-opacity="0.4" stroke-width="2"/>
+
+  <!-- Energy Stream Line -->
+  <line x1="170" y1="640" x2="900" y2="490" stroke="#E44743" stroke-width="2" stroke-dasharray="8 6"/>
+  
+  <text x="100" y="160" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="44" font-weight="bold">Commercial &amp; Industrial</text>
+  <text x="100" y="210" fill="#C62845" font-family="monospace" font-size="20" letter-spacing="2">ZERO-PENETRATION BALLASTED ROOFTOP</text>
+</svg>

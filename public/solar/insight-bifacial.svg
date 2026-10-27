@@ -1,0 +1,24 @@
+<svg width="800" height="500" viewBox="0 0 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="biBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140207"/>
+      <stop offset="100%" stop-color="#360B19"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#biBg)"/>
+  
+  <!-- Bifacial Solar Panel -->
+  <polygon points="260,200 540,160 580,320 300,360" fill="#20040d" stroke="#C62845" stroke-width="3"/>
+  <line x1="420" y1="260" x2="420" y2="440" stroke="#70152D" stroke-width="4"/>
+  
+  <!-- Direct Sunlight Rays -->
+  <line x1="220" y1="80" x2="340" y2="180" stroke="#E9B85B" stroke-width="2.5" stroke-dasharray="6 4"/>
+  <line x1="360" y1="60" x2="460" y2="170" stroke="#E9B85B" stroke-width="2.5" stroke-dasharray="6 4"/>
+  
+  <!-- Albedo Reflected Ground Rays to Rear -->
+  <line x1="360" y1="460" x2="440" y2="340" stroke="#E44743" stroke-width="2.5" stroke-dasharray="6 4"/>
+  <line x1="480" y1="460" x2="520" y2="330" stroke="#E44743" stroke-width="2.5" stroke-dasharray="6 4"/>
+
+  <text x="50" y="70" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="28" font-weight="bold">Bifacial High-Albedo Ground</text>
+  <text x="50" y="100" fill="#E44743" font-family="monospace" font-size="14">REAR-SIDE SURGE YIELD DYNAMICS</text>
+</svg>

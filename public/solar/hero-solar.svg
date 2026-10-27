@@ -1,0 +1,70 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#191719"/>
+      <stop offset="45%" stop-color="#360B19"/>
+      <stop offset="75%" stop-color="#70152D"/>
+      <stop offset="100%" stop-color="#C62845"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#E9B85B" stop-opacity="0.85"/>
+      <stop offset="35%" stop-color="#E44743" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#70152D" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#191719" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a0813"/>
+      <stop offset="50%" stop-color="#1a040b"/>
+      <stop offset="100%" stop-color="#0e0206"/>
+    </linearGradient>
+    <linearGradient id="gridBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C62845" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#E44743" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#E9B85B" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky & Horizon -->
+  <rect width="1920" height="1080" fill="url(#skyGrad)"/>
+  <circle cx="960" cy="580" r="480" fill="url(#sunGlow)"/>
+
+  <!-- Horizon Industrial Geometry -->
+  <path d="M 0 680 L 320 650 L 580 670 L 960 620 L 1340 660 L 1680 640 L 1920 675 L 1920 1080 L 0 1080 Z" fill="#120207"/>
+
+  <!-- Solar Rooftop Arrays in Perspective -->
+  <g transform="translate(0, 500)">
+    <!-- Main Center Array -->
+    <polygon points="400,280 1520,280 1780,580 140,580" fill="url(#panelGrad)" stroke="#70152D" stroke-width="2"/>
+    
+    <!-- Panel Grid Lines - Horizontal Rows -->
+    <line x1="340" y1="340" x2="1580" y2="340" stroke="#C62845" stroke-opacity="0.5" stroke-width="1.5"/>
+    <line x1="280" y1="410" x2="1640" y2="410" stroke="#C62845" stroke-opacity="0.6" stroke-width="1.5"/>
+    <line x1="210" y1="490" x2="1710" y2="490" stroke="#C62845" stroke-opacity="0.7" stroke-width="2"/>
+
+    <!-- Panel Grid Lines - Perspective Columns -->
+    <line x1="480" y1="280" x2="280" y2="580" stroke="#70152D" stroke-opacity="0.7" stroke-width="1.5"/>
+    <line x1="640" y1="280" x2="520" y2="580" stroke="#70152D" stroke-opacity="0.7" stroke-width="1.5"/>
+    <line x1="800" y1="280" x2="760" y2="580" stroke="#70152D" stroke-opacity="0.7" stroke-width="1.5"/>
+    <line x1="960" y1="280" x2="960" y2="580" stroke="#E44743" stroke-opacity="0.8" stroke-width="2"/>
+    <line x1="1120" y1="280" x2="1160" y2="580" stroke="#70152D" stroke-opacity="0.7" stroke-width="1.5"/>
+    <line x1="1280" y1="280" x2="1400" y2="580" stroke="#70152D" stroke-opacity="0.7" stroke-width="1.5"/>
+    <line x1="1440" y1="280" x2="1640" y2="580" stroke="#70152D" stroke-opacity="0.7" stroke-width="1.5"/>
+
+    <!-- High-Tech Energy Flare Vectors -->
+    <line x1="210" y1="490" x2="1710" y2="490" stroke="url(#gridBeam)" stroke-width="3"/>
+    <circle cx="960" cy="490" r="6" fill="#E9B85B"/>
+    <circle cx="960" cy="490" r="14" fill="#E44743" fill-opacity="0.4"/>
+  </g>
+
+  <!-- Industrial High-Tech Building Sillhouette -->
+  <rect x="0" y="980" width="1920" height="100" fill="#080104"/>
+  
+  <!-- Subtle Telemetry Grid Nodes -->
+  <g fill="#E44743" opacity="0.6">
+    <circle cx="340" cy="840" r="3"/>
+    <circle cx="580" cy="910" r="3"/>
+    <circle cx="960" cy="770" r="4"/>
+    <circle cx="1340" cy="910" r="3"/>
+    <circle cx="1580" cy="840" r="3"/>
+  </g>
+</svg>

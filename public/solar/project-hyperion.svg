@@ -1,0 +1,33 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hypBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0205"/>
+      <stop offset="60%" stop-color="#360B19"/>
+      <stop offset="100%" stop-color="#191719"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#hypBg)"/>
+
+  <!-- Tier-4 Data Center Architecture -->
+  <rect x="200" y="440" width="800" height="240" rx="12" fill="#1b030a" stroke="#70152D" stroke-width="2"/>
+  
+  <!-- Server Bay Cooling Louvers -->
+  <g stroke="#C62845" stroke-width="1.5" opacity="0.6">
+    <line x1="250" y1="480" x2="350" y2="480"/>
+    <line x1="250" y1="520" x2="350" y2="520"/>
+    <line x1="250" y1="560" x2="350" y2="560"/>
+    <line x1="250" y1="600" x2="350" y2="600"/>
+  </g>
+
+  <!-- Rooftop High-Efficiency Solar Matrix -->
+  <polygon points="220,440 980,440 1020,340 180,340" fill="#24050e" stroke="#E44743" stroke-width="2"/>
+  
+  <!-- BESS Storage Array Perimeter -->
+  <rect x="180" y="700" width="120" height="60" rx="4" fill="#E44743"/>
+  <rect x="340" y="700" width="120" height="60" rx="4" fill="#E44743"/>
+  <rect x="500" y="700" width="120" height="60" rx="4" fill="#E44743"/>
+  <rect x="660" y="700" width="120" height="60" rx="4" fill="#E44743"/>
+
+  <text x="80" y="120" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="40" font-weight="bold">Hyperion AI Compute Campus Microgrid</text>
+  <text x="80" y="165" fill="#E9B85B" font-family="monospace" font-size="18" letter-spacing="1">32 MWp SOLAR + 60 MWh LIQUID-COOLED BESS // TIER-4 RESILIENCE</text>
+</svg>

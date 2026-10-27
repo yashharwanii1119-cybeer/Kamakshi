@@ -1,0 +1,17 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140207"/>
+      <stop offset="100%" stop-color="#360B19"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#gBg)"/>
+  
+  <!-- Transmission Grid & Spike Chart -->
+  <polyline points="100,400 220,380 340,320 460,200 580,260 700,140" fill="none" stroke="#E44743" stroke-width="4"/>
+  <circle cx="460" cy="200" r="6" fill="#E9B85B"/>
+  <circle cx="700" cy="140" r="8" fill="#E9B85B"/>
+
+  <text x="50" y="80" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="28" font-weight="bold">Grid Congestion &amp; Tariffs</text>
+  <text x="50" y="115" fill="#E44743" font-family="monospace" font-size="14">EXECUTIVE WHITEPAPER // POWER SPIKE ANALYSIS</text>
+</svg>

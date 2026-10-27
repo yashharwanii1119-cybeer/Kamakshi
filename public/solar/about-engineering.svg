@@ -1,0 +1,31 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="engBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140207"/>
+      <stop offset="50%" stop-color="#360B19"/>
+      <stop offset="100%" stop-color="#191719"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#engBg)"/>
+
+  <!-- Molecular Silicon Wafer Diagram -->
+  <circle cx="600" cy="460" r="180" fill="#1f040d" stroke="#C62845" stroke-width="2.5"/>
+  <circle cx="600" cy="460" r="140" fill="none" stroke="#70152D" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <circle cx="600" cy="460" r="80" fill="none" stroke="#E44743" stroke-width="2"/>
+  
+  <!-- Electron Harvesting Photon Beams -->
+  <line x1="280" y1="260" x2="520" y2="400" stroke="#E9B85B" stroke-width="3" stroke-dasharray="8 6"/>
+  <line x1="920" y1="260" x2="680" y2="400" stroke="#E9B85B" stroke-width="3" stroke-dasharray="8 6"/>
+  <circle cx="520" cy="400" r="6" fill="#E9B85B"/>
+  <circle cx="680" cy="400" r="6" fill="#E9B85B"/>
+
+  <!-- Silicon Busbars -->
+  <g stroke="#FAF8F5" stroke-opacity="0.3" stroke-width="1.5">
+    <line x1="450" y1="460" x2="750" y2="460"/>
+    <line x1="470" y1="420" x2="730" y2="420"/>
+    <line x1="470" y1="500" x2="730" y2="500"/>
+  </g>
+
+  <text x="80" y="120" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="40" font-weight="bold">Quantum Photonic Harvesting</text>
+  <text x="80" y="165" fill="#E44743" font-family="monospace" font-size="18" letter-spacing="1">N-TYPE TOPCON &amp; PEROVSKITE TANDEM SEMICONDUCTOR</text>
+</svg>

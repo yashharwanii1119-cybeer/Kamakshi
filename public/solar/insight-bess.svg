@@ -1,0 +1,19 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#191719"/>
+      <stop offset="100%" stop-color="#360B19"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bBg)"/>
+  
+  <!-- Arbitrage Stacking Histogram -->
+  <rect x="140" y="240" width="80" height="180" rx="4" fill="#70152D"/>
+  <rect x="260" y="180" width="80" height="240" rx="4" fill="#C62845"/>
+  <rect x="380" y="120" width="80" height="300" rx="4" fill="#E44743"/>
+  <rect x="500" y="200" width="80" height="220" rx="4" fill="#C62845"/>
+  <rect x="620" y="150" width="80" height="270" rx="4" fill="#E9B85B"/>
+
+  <text x="50" y="70" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="28" font-weight="bold">BESS Revenue Stacking</text>
+  <text x="50" y="100" fill="#E9B85B" font-family="monospace" font-size="14">SPOT ARBITRAGE &amp; FREQUENCY REGULATION</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="scadaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#191719"/>
+      <stop offset="50%" stop-color="#360B19"/>
+      <stop offset="100%" stop-color="#0a0205"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#scadaBg)"/>
+
+  <!-- Radar Telemetry Grid Rings -->
+  <g stroke="#C62845" stroke-opacity="0.3" fill="none">
+    <circle cx="600" cy="480" r="120" stroke-width="1.5"/>
+    <circle cx="600" cy="480" r="220" stroke-width="1.5"/>
+    <circle cx="600" cy="480" r="320" stroke-width="1.5" stroke-dasharray="8 8"/>
+    <line x1="280" y1="480" x2="920" y2="480" stroke-width="1.5"/>
+    <line x1="600" y1="160" x2="600" y2="800" stroke-width="1.5"/>
+  </g>
+
+  <!-- Rotating Sweep Scanner Angle -->
+  <path d="M 600 480 L 820 320 A 320 320 0 0 0 600 160 Z" fill="#E44743" fill-opacity="0.15"/>
+
+  <!-- Power Telemetry Nodes -->
+  <g fill="#E44743">
+    <circle cx="600" cy="480" r="8"/>
+    <circle cx="680" cy="380" r="5" fill="#E9B85B"/>
+    <circle cx="520" cy="420" r="5" fill="#E9B85B"/>
+    <circle cx="740" cy="540" r="6"/>
+    <circle cx="460" cy="560" r="5"/>
+    <circle cx="600" cy="260" r="6" fill="#E9B85B"/>
+  </g>
+
+  <!-- Network Interconnection Paths -->
+  <path d="M 600 480 L 680 380 L 600 260 L 520 420 L 460 560 L 600 480 L 740 540" fill="none" stroke="#E44743" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <text x="80" y="140" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="44" font-weight="bold">AI-Autonomous SCADA</text>
+  <text x="80" y="190" fill="#E44743" font-family="monospace" font-size="20" letter-spacing="2">RADAR IRRADIANCE FORECASTING // 100MS DISPATCH</text>
+</svg>

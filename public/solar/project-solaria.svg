@@ -1,0 +1,31 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="solBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#191719"/>
+      <stop offset="50%" stop-color="#70152D"/>
+      <stop offset="100%" stop-color="#0a0205"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#solBg)"/>
+
+  <!-- Vast Plains Horizon -->
+  <path d="M 0 540 L 400 510 L 800 530 L 1200 500 L 1200 800 L 0 800 Z" fill="#140207"/>
+
+  <!-- Field of Single-Axis Trackers -->
+  <g stroke="#E44743" stroke-width="1.5" fill="#1e040c">
+    <polygon points="100,560 300,530 340,610 140,640"/>
+    <polygon points="380,560 580,530 620,610 420,640"/>
+    <polygon points="660,560 860,530 900,610 700,640"/>
+    <polygon points="940,560 1140,530 1180,610 980,640"/>
+
+    <polygon points="200,660 460,630 500,740 240,770"/>
+    <polygon points="540,660 800,630 840,740 580,770"/>
+    <polygon points="880,660 1140,630 1180,740 920,770"/>
+  </g>
+
+  <!-- 230kV Switchyard Line -->
+  <line x1="50" y1="420" x2="1150" y2="420" stroke="#E9B85B" stroke-width="2" stroke-dasharray="12 8"/>
+
+  <text x="80" y="120" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="40" font-weight="bold">Solaria Valley Utility Power Park</text>
+  <text x="80" y="165" fill="#E44743" font-family="monospace" font-size="18" letter-spacing="1">185 MWp BIFACIAL SINGLE-AXIS TRACKER // 230kV SWITCHYARD</text>
+</svg>

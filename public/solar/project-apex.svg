@@ -1,0 +1,29 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="apexBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140207"/>
+      <stop offset="60%" stop-color="#360B19"/>
+      <stop offset="100%" stop-color="#191719"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#apexBg)"/>
+  
+  <!-- Freight Fulfillment Facility Outline -->
+  <polygon points="100,500 1100,440 1150,720 50,780" fill="#1f050d" stroke="#70152D" stroke-width="2"/>
+  
+  <!-- Rooftop Solar Grid Array -->
+  <g stroke="#C62845" stroke-width="1.5" fill="#0d0105">
+    <polygon points="160,530 540,510 560,610 180,630"/>
+    <polygon points="580,510 960,490 980,590 600,610"/>
+    <polygon points="190,650 570,630 590,730 210,750"/>
+    <polygon points="610,630 990,610 1010,710 630,730"/>
+  </g>
+
+  <!-- Heavy Truck EV Charging Stalls -->
+  <rect x="180" y="750" width="80" height="30" rx="4" fill="#E44743"/>
+  <rect x="280" y="750" width="80" height="30" rx="4" fill="#E44743"/>
+  <rect x="380" y="750" width="80" height="30" rx="4" fill="#E44743"/>
+
+  <text x="80" y="120" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="40" font-weight="bold">Apex Intermodal Freight Superhub</text>
+  <text x="80" y="165" fill="#E9B85B" font-family="monospace" font-size="18" letter-spacing="1">14.2 MWp ROOFTOP + 8 MWh BESS // LOGISTICS HUB</text>
+</svg>

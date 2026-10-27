@@ -1,0 +1,55 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bessBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#191719"/>
+      <stop offset="60%" stop-color="#360B19"/>
+      <stop offset="100%" stop-color="#0a0205"/>
+    </linearGradient>
+    <linearGradient id="containerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#240710"/>
+      <stop offset="50%" stop-color="#460d1e"/>
+      <stop offset="100%" stop-color="#1e050d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bessBg)"/>
+
+  <!-- Industrial Foundation Pad -->
+  <polygon points="120,680 1080,680 1140,760 60,760" fill="#140207" stroke="#70152D" stroke-width="2"/>
+
+  <!-- 40ft BESS Container 1 -->
+  <g transform="translate(180, 360)">
+    <rect x="0" y="0" width="380" height="280" rx="6" fill="url(#containerGrad)" stroke="#C62845" stroke-width="2"/>
+    <!-- Container corrugated ribs -->
+    <line x1="60" y1="20" x2="60" y2="260" stroke="#70152D" stroke-width="2"/>
+    <line x1="120" y1="20" x2="120" y2="260" stroke="#70152D" stroke-width="2"/>
+    <line x1="180" y1="20" x2="180" y2="260" stroke="#70152D" stroke-width="2"/>
+    <line x1="240" y1="20" x2="240" y2="260" stroke="#70152D" stroke-width="2"/>
+    <line x1="300" y1="20" x2="300" y2="260" stroke="#70152D" stroke-width="2"/>
+    <!-- Liquid cooling status bar -->
+    <rect x="30" y="40" width="20" height="60" rx="3" fill="#E44743"/>
+    <rect x="30" y="110" width="20" height="60" rx="3" fill="#E9B85B"/>
+    <!-- HVAC Fan Chiller Grill -->
+    <circle cx="340" cy="70" r="22" fill="#120207" stroke="#C62845" stroke-width="1.5"/>
+    <text x="30" y="240" fill="#FAF8F5" font-family="monospace" font-size="12">BESS-BAY-01 // LFP</text>
+  </g>
+
+  <!-- 40ft BESS Container 2 -->
+  <g transform="translate(640, 360)">
+    <rect x="0" y="0" width="380" height="280" rx="6" fill="url(#containerGrad)" stroke="#C62845" stroke-width="2"/>
+    <line x1="60" y1="20" x2="60" y2="260" stroke="#70152D" stroke-width="2"/>
+    <line x1="120" y1="20" x2="120" y2="260" stroke="#70152D" stroke-width="2"/>
+    <line x1="180" y1="20" x2="180" y2="260" stroke="#70152D" stroke-width="2"/>
+    <line x1="240" y1="20" x2="240" y2="260" stroke="#70152D" stroke-width="2"/>
+    <line x1="300" y1="20" x2="300" y2="260" stroke="#70152D" stroke-width="2"/>
+    <rect x="30" y="40" width="20" height="60" rx="3" fill="#E44743"/>
+    <rect x="30" y="110" width="20" height="60" rx="3" fill="#E9B85B"/>
+    <circle cx="340" cy="70" r="22" fill="#120207" stroke="#C62845" stroke-width="1.5"/>
+    <text x="30" y="240" fill="#FAF8F5" font-family="monospace" font-size="12">BESS-BAY-02 // LFP</text>
+  </g>
+
+  <!-- Power Pulse Flow Line -->
+  <line x1="560" y1="500" x2="640" y2="500" stroke="#E9B85B" stroke-width="4" stroke-dasharray="10 4"/>
+
+  <text x="80" y="140" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-size="44" font-weight="bold">High-Density BESS Storage</text>
+  <text x="80" y="190" fill="#E44743" font-family="monospace" font-size="20" letter-spacing="2">LIQUID-COOLED LFP // SUB-20MS ISLANDING</text>
+</svg>
