@@ -142,7 +142,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPolicy }) => {
             <ul className="space-y-2 text-xs text-brand-offwhite/75 font-medium">
               {siteConfig.solutions.map((s) => (
                 <li key={s.id}>
-                  <a href="#solutions" className="hover:text-brand-solar transition-colors">
+                  <a href={`#${s.id}`} className="hover:text-brand-solar transition-colors">
                     {s.title}
                   </a>
                 </li>

@@ -92,6 +92,9 @@ export const Hero: React.FC<HeroProps> = () => {
             transition={{ duration: 1, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
             className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white font-display leading-[1.04]"
           >
+            <span className="block text-xs sm:text-sm md:text-base font-mono font-bold tracking-[0.22em] text-brand-gold uppercase mb-3 sm:mb-4">
+              Kamakshi Traders — Solar Solutions Jodhpur
+            </span>
             Powering Progress.
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-crimson via-brand-solar to-brand-gold">

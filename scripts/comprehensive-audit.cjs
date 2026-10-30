@@ -551,8 +551,8 @@ async function runAudit() {
   const schemaScript = await page.locator('script[type="application/ld+json"]').innerText();
   const parsedSchema = JSON.parse(schemaScript);
   console.log('Schema parsed successfully. Entity graph count:', parsedSchema['@graph']?.length);
-  if (!parsedSchema['@graph'] || parsedSchema['@graph'].length < 4) {
-    throw new Error('Schema.org graph must contain at least LocalBusiness, WebSite, VideoObject, and FAQPage');
+  if (!parsedSchema['@graph'] || parsedSchema['@graph'].length < 3) {
+    throw new Error('Schema.org graph must contain at least SolarEnergyCompany, WebSite, and VideoObject');
   }
 
   const businessEntity = parsedSchema['@graph'].find(e => e['@type'] === 'SolarEnergyCompany' || e['@type'] === 'LocalBusiness');
@@ -560,14 +560,25 @@ async function runAudit() {
     throw new Error('Schema.org LocalBusiness entity is missing verified telephone or Jodhpur address');
   }
 
+  if (!businessEntity.hasOfferCatalog || businessEntity.hasOfferCatalog.itemListElement?.length < 3) {
+    throw new Error('Schema.org entity must include verified OfferCatalog with solar offerings');
+  }
+
   const faqEntity = parsedSchema['@graph'].find(e => e['@type'] === 'FAQPage');
-  if (!faqEntity || faqEntity.mainEntity?.length !== 8) {
-    throw new Error(`Schema.org FAQPage must contain exactly 8 question entities, found: ${faqEntity?.mainEntity?.length}`);
+  if (faqEntity) {
+    throw new Error('Schema.org FAQPage must NOT be present when visible FAQ section is removed (Google policy violation)');
   }
 
   const videoEntity = parsedSchema['@graph'].find(e => e['@type'] === 'VideoObject');
   if (!videoEntity || !videoEntity.thumbnailUrl || !videoEntity.contentUrl) {
     throw new Error('Schema.org VideoObject entity is missing required properties');
+  }
+
+  // Verify H1 heading contains brand and location
+  const h1Text = await page.locator('h1').innerText();
+  console.log('H1 Heading:', h1Text);
+  if (!h1Text.toLowerCase().includes('kamakshi traders') || !h1Text.toLowerCase().includes('jodhpur')) {
+    throw new Error(`H1 heading must contain brand and location keywords: "${h1Text}"`);
   }
 
   results.tests.push({ name: 'Technical SEO, High-Intent Local Metadata & Schema.org JSON-LD Graph', status: 'PASS' });

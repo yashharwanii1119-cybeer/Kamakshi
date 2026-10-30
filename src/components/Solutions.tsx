@@ -42,11 +42,12 @@ export const Solutions: React.FC = () => {
             return (
               <motion.div
                 key={solution.id}
+                id={solution.id}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: idx * 0.08 }}
-                className="bg-white rounded-3xl overflow-hidden border border-brand-maroon/15 shadow-luxury hover:shadow-2xl hover:border-brand-crimson/40 transition-all duration-300 flex flex-col justify-between group"
+                className="bg-white rounded-3xl overflow-hidden border border-brand-maroon/15 shadow-luxury hover:shadow-2xl hover:border-brand-crimson/40 transition-all duration-300 flex flex-col justify-between group scroll-mt-28"
               >
                 <div>
                   {/* Visual Header */}
