@@ -588,8 +588,8 @@ async function runAudit() {
   const sitemapRes = await page.request.get(`${BASE_URL}sitemap.xml`);
   const sitemapXml = await sitemapRes.text();
   console.log('sitemap.xml status:', sitemapRes.status(), '| bytes:', sitemapXml.length);
-  if (sitemapRes.status() !== 200 || !sitemapXml.includes('<urlset') || !sitemapXml.includes('image:image') || !sitemapXml.includes('video:video')) {
-    throw new Error('sitemap.xml does not return 200 or is missing urlset/images/video extensions');
+  if (sitemapRes.status() !== 200 || !sitemapXml.includes('<urlset') || !sitemapXml.includes('https://kamakshitradersjodhpur.in/')) {
+    throw new Error('sitemap.xml does not return 200 or is missing valid canonical urlset');
   }
 
   // llms.txt

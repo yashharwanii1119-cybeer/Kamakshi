@@ -1,65 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kamakshitradersjodhpur.in/</loc>
-    <lastmod>2026-10-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    
-    <!-- Brand Logo -->
-    <image:image>
-      <image:loc>https://kamakshitradersjodhpur.in/images/kamakshi-traders-logo.png</image:loc>
-      <image:title>Kamakshi Traders — Solar Solutions Official Logo</image:title>
-      <image:caption>Kamakshi Traders — Solar Solutions logo, Jodhpur, Rajasthan, India</image:caption>
-    </image:image>
-
-    <!-- Project 1: Pratap Nagar Residential Rooftop Solar Plant -->
-    <image:image>
-      <image:loc>https://kamakshitradersjodhpur.in/images/projects/project-3-jodhpur-commissioned.jpg</image:loc>
-      <image:title>Pratap Nagar Residential Rooftop Solar Plant Jodhpur</image:title>
-      <image:caption>10 kWp on-grid residential rooftop solar plant installation with DISCOM net-metering in Pratap Nagar, Jodhpur, Rajasthan by Kamakshi Traders</image:caption>
-    </image:image>
-
-    <!-- Project 2: Indira Colony Residential Solar Installation -->
-    <image:image>
-      <image:loc>https://kamakshitradersjodhpur.in/images/projects/project-2-jodhpur-residential.jpg</image:loc>
-      <image:title>Indira Colony On-Grid Solar Installation Jodhpur</image:title>
-      <image:caption>8 kWp rooftop solar photovoltaic system installed at Indira Colony, Jodhpur, Rajasthan</image:caption>
-    </image:image>
-
-    <!-- Project 3: Commercial Shed Rooftop Solar Array -->
-    <image:image>
-      <image:loc>https://kamakshitradersjodhpur.in/images/projects/project-5-commercial-shed-array.png</image:loc>
-      <image:title>Commercial Shed Rooftop Solar Array Rajasthan</image:title>
-      <image:caption>85 kWp industrial curved shed rooftop solar installation in Rajasthan by Kamakshi Traders</image:caption>
-    </image:image>
-
-    <!-- Project 4: Elevated Solar Superstructure & Shed Plant -->
-    <image:image>
-      <image:loc>https://kamakshitradersjodhpur.in/images/projects/project-1-rooftop-structure.jpg</image:loc>
-      <image:title>Elevated Solar Superstructure and Industrial Shed Plant</image:title>
-      <image:caption>120 kWp high-clearance hot-dip galvanized elevated solar mounting structure engineered for industrial facilities in Western India</image:caption>
-    </image:image>
-
-    <!-- Project 5: Industrial Solar Structure Fabrication Site -->
-    <image:image>
-      <image:loc>https://kamakshitradersjodhpur.in/images/projects/project-4-industrial-fabrication.jpg</image:loc>
-      <image:title>Industrial Solar Structure Fabrication Site Rajasthan</image:title>
-      <image:caption>Precision heavy structural steel fabrication and solar truss engineering facility supporting turnkey solar installations in Rajasthan</image:caption>
-    </image:image>
-
-    <!-- Homepage Video -->
-    <video:video>
-      <video:thumbnail_loc>https://kamakshitradersjodhpur.in/images/video/poster.png</video:thumbnail_loc>
-      <video:title>Kamakshi Traders Solar Installation and Field Engineering Overview</video:title>
-      <video:description>Field engineering, elevated mounting structures, and rooftop solar installation by Kamakshi Traders — Solar Solutions in Jodhpur, Rajasthan, India.</video:description>
-      <video:content_loc>https://kamakshitradersjodhpur.in/images/video/gemini_generated_video_73d62f32_gwr_video_mvp.mp4</video:content_loc>
-      <video:duration>10</video:duration>
-      <video:publication_date>2026-10-27T00:00:00+05:30</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-      <video:live>no</video:live>
-    </video:video>
+    <lastmod>2026-10-30</lastmod>
   </url>
 </urlset>
